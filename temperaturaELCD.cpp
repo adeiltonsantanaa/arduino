@@ -1,12 +1,12 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-const int sensorPin = A0;
-const int backlightPin = 2;
-const int ledPin = A4;
-const int lcdColumns = 20;
-const int lcdRows = 4;
-const float betaValue = 3950.0;
+#define sensorPin A0
+#define backlightPin 2
+#define ledPin A4
+#define lcdColumns 20
+#define lcdRows 4
+#define betaValue 3950.0
 
 LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
 
